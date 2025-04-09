@@ -22,7 +22,7 @@ jobs:
         run: pip install black flake8
 
       - name: Run Black code formatter
-        run: black --check --diff *.py --no-config --exclude '.gitignore' .
+        run: black --check --diff *.py .
 
       - name: Run Flake8 linter
         run: flake8 .
